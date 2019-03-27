@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_bar"
+        layout="@layout/layout_title" />
+
+    <TextView
+        android:id="@+id/otp_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:text="OTP" />
+
+    <ProgressBar
+        android:id="@+id/otp_time"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:max="30"
+        android:progress="0" />
+</LinearLayout>
